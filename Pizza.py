@@ -2,7 +2,7 @@ from Food import Pizza
 
 class Pepperoni(Pizza):
     def __init__(self):
-        super().__init__("Pepperoni Pizza", 7.99, toppings, cheese)
+        super().__init__("Pepperoni Pizza", 9.99, toppings, cheese)
         toppings = ["Pepperoni"]
         cheese = ["Cheddar"]
 
