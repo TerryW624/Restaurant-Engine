@@ -1,4 +1,4 @@
-class RunSimulation:
+class Simulation:
     def __init__(self):
         pass
 
