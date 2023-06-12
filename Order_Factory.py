@@ -3,6 +3,16 @@ from Pasta import *
 from Salad import *
 
 class Order_Factory:
+    menu_dictionary = {"1" : Pepperoni(),
+                       "2" : Meatlovers(),
+                       "3" : Supreme(),
+                       "4" : FettuciniAlfredo(),
+                       "5" : SpagehttiAndMeatBalls(),
+                       "6" : FourCheeseRavioli(),
+                       "7" : ChickenCaesar(),
+                       "8" : Garden(),
+                       "9" : Italian()}
+
     @staticmethod
     def display_menu():
         orders = [Pepperoni(), Meatlovers(), Supreme(), FettuciniAlfredo(), SpagehttiAndMeatBalls(), FourCheeseRavioli(), ChickenCaesar(), Garden(), Italian()]
@@ -40,7 +50,7 @@ class Order_Factory:
             else:
                 salad = menu_dictionary[order]
                 print(f"You've selected {salad.dish_name}!")
-                print(f"You're total is {pizza.price}")
+                print(f"You're total is {salad.price}")
                 print("Enjoy your pizza!")
 
 
